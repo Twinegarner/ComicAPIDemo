@@ -32,12 +32,14 @@ namespace ComicAPIDemo
             this.InitializeComponent();
             //helper makes calls on the internet
             ApiHelper.InitializeClient();
+            //its false if the user is at the latest comic
+            NextButton.IsEnabled = false;
         }
 
         private async Task LoadImage(int imageNumber = 0)
         {
             var comic = await ComicProcessor.LoadComic(imageNumber);
-
+            //if no comic is chosen
             if(imageNumber == 0)
             {
                 maxNumber = comic.Num;
@@ -53,6 +55,39 @@ namespace ComicAPIDemo
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             await LoadImage();
+        }
+
+        private async void PreviousButton_Click(object sender, RoutedEventArgs e)
+        {
+            //guessing that the first image starts with 1 
+            if (currentNumber > 1)
+            {
+                currentNumber -= 1;
+                NextButton.IsEnabled = true;
+                await LoadImage(currentNumber);
+                //if at the end dont go further back
+                if (currentNumber == 1)
+                {
+                    PreviousButton.IsEnabled = false;
+                }
+            }
+        }
+
+        private async void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            //if not max the find a newer comic
+            if (currentNumber < maxNumber)
+            {
+                currentNumber += 1;
+                //if previous is false then make it ture 
+                PreviousButton.IsEnabled = true;
+                //load new image 
+                await LoadImage(currentNumber);
+                if (currentNumber == maxNumber)
+                {
+                    NextButton.IsEnabled = false;
+                }
+            }
         }
     }
 }

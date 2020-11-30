@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="ComicAPIDemo.SunPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ComicAPIDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="LoadSunInfo" Content="Sun Information" Margin="0,72,0,0" VerticalAlignment="Top" Height="69" Width="506" HorizontalAlignment="Center"/>
+        <TextBox x:Name="SunriseText" HorizontalAlignment="Center" Margin="0,231,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1145" Height="105"/>
+        <TextBox x:Name="SunsetText" HorizontalAlignment="Center" Margin="0,420,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1145" Height="105"/>
+
+    </Grid>
+</Page>
