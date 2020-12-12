@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="LoadSunInfo" Content="Sun Information" Margin="0,72,0,0" VerticalAlignment="Top" Height="69" Width="506" HorizontalAlignment="Center"/>
+        <Button x:Name="LoadSunInfo" Content="Sun Information" Click="LoadSunInfo_Click" Margin="0,72,0,0" VerticalAlignment="Top" Height="69" Width="506" HorizontalAlignment="Center"/>
         <TextBox x:Name="SunriseText" HorizontalAlignment="Center" Margin="0,231,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1145" Height="105"/>
         <TextBox x:Name="SunsetText" HorizontalAlignment="Center" Margin="0,420,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1145" Height="105"/>
 

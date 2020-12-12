@@ -89,5 +89,10 @@ namespace ComicAPIDemo
                 }
             }
         }
+
+        private void SunInfomation_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SunPage));
+        }
     }
 }

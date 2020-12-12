@@ -12,7 +12,7 @@
         <Image Margin="126,126,126,126" RenderTransformOrigin="0.503,0.495"/>
         <Button x:Name="PreviousButton" Click="PreviousButton_Click" Content="Previous" Margin="83,93,0,0" VerticalAlignment="Top" Height="70" Width="270"/>
         <Button x:Name="NextButton" Click="NextButton_Click" Content="Next" Margin="0,93,83,0" VerticalAlignment="Top" Height="70" Width="271" HorizontalAlignment="Right"/>
-        <Button x:Name="SunInfomation" Content="Sun Information" Margin="0,93,0,0" VerticalAlignment="Top" Height="70" Width="270" HorizontalAlignment="Center"/>
+        <Button x:Name="SunInfomation" Content="Sun Information" Click="SunInfomation_Click" Margin="0,93,0,0" VerticalAlignment="Top" Height="70" Width="270" HorizontalAlignment="Center"/>
         <Image x:Name="comicImage" HorizontalAlignment="Center" Height="520" Margin="0,200,0,0" VerticalAlignment="Top" Width="1270"/>
 
     </Grid>

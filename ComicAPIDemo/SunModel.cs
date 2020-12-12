@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ComicAPIDemo
 {
-    //used to find json results prop
-    public class SunResultModel
+    public class SunModel
     {
-        public SunModel Results { get; set; }
+        public DateTime Sunrise { get; set; }
+        public DateTime Sunset { get; set; }
     }
 }

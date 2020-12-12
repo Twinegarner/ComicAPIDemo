@@ -126,9 +126,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SunModel.cs" />
     <Compile Include="SunPage.xaml.cs">
       <DependentUpon>SunPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SunProcessor.cs" />
     <Compile Include="SunResultModel.cs" />
   </ItemGroup>
   <ItemGroup>
